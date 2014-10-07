@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DetailViewController.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,4 +27,16 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([sender isKindOfClass:[UIBarButtonItem class]])
+    {
+        if ([segue.destinationViewController isKindOfClass:[DetailViewController class]])
+        {
+            NSString *textToAdd = self.textField.text;
+            DetailViewController *nextViewController = segue.destinationViewController;
+            nextViewController.textFromTextBox = textToAdd;
+        }
+    }
+}
 @end

@@ -14,6 +14,7 @@
 		006BD77519E3C15400687313 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 006BD77419E3C15400687313 /* Images.xcassets */; };
 		006BD77819E3C15400687313 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 006BD77619E3C15400687313 /* LaunchScreen.xib */; };
 		006BD78419E3C15500687313 /* Protocol_Challenge_SolutionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 006BD78319E3C15400687313 /* Protocol_Challenge_SolutionTests.m */; };
+		006BD78F19E3C36200687313 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 006BD78E19E3C36200687313 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		006BD77D19E3C15400687313 /* Protocol Challenge SolutionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Protocol Challenge SolutionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		006BD78219E3C15400687313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		006BD78319E3C15400687313 /* Protocol_Challenge_SolutionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Protocol_Challenge_SolutionTests.m; sourceTree = "<group>"; };
+		006BD78D19E3C36200687313 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		006BD78E19E3C36200687313 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +87,8 @@
 				006BD76B19E3C15400687313 /* AppDelegate.h */,
 				006BD76C19E3C15400687313 /* AppDelegate.m */,
 				006BD77119E3C15400687313 /* Main.storyboard */,
+				006BD78D19E3C36200687313 /* DetailViewController.h */,
+				006BD78E19E3C36200687313 /* DetailViewController.m */,
 				006BD76E19E3C15400687313 /* ViewController.h */,
 				006BD76F19E3C15400687313 /* ViewController.m */,
 				006BD77419E3C15400687313 /* Images.xcassets */,
@@ -222,6 +227,7 @@
 				006BD77019E3C15400687313 /* ViewController.m in Sources */,
 				006BD76D19E3C15400687313 /* AppDelegate.m in Sources */,
 				006BD76A19E3C15400687313 /* main.m in Sources */,
+				006BD78F19E3C36200687313 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
