@@ -83,9 +83,9 @@
 			children = (
 				006BD76B19E3C15400687313 /* AppDelegate.h */,
 				006BD76C19E3C15400687313 /* AppDelegate.m */,
+				006BD77119E3C15400687313 /* Main.storyboard */,
 				006BD76E19E3C15400687313 /* ViewController.h */,
 				006BD76F19E3C15400687313 /* ViewController.m */,
-				006BD77119E3C15400687313 /* Main.storyboard */,
 				006BD77419E3C15400687313 /* Images.xcassets */,
 				006BD77619E3C15400687313 /* LaunchScreen.xib */,
 				006BD76719E3C15400687313 /* Supporting Files */,
