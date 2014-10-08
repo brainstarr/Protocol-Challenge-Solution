@@ -37,8 +37,10 @@
 }
 */
 
-- (IBAction)detailUpdateButton:(id)sender {
+- (IBAction)detailUpdateButton:(id)sender
+{
+    self.detailTextLabel.text = self.detailViewTextField.text;
+    [self.delegate didUpdateText:self.detailViewTextField.text];
 }
-- (IBAction)detailUpdate:(id)sender {
-}
+
 @end

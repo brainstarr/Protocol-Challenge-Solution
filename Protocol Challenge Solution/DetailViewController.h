@@ -8,17 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol didUpdateText <NSObject>
+@protocol DetailViewControllerDelegate <NSObject>
 
 @required
 
-
+-(void)didUpdateText:(NSString *)text;
 
 @end
 
 @interface DetailViewController : UIViewController
 
-@property (weak, nonatomic)NSString *text;
+@property (weak, nonatomic) id <DetailViewControllerDelegate> delegate;
 
 @property (strong, nonatomic) IBOutlet UILabel *detailTextLabel;
 @property (strong, nonatomic) NSString *textFromTextBox;

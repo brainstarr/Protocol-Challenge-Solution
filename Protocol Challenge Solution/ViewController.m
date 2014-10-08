@@ -27,6 +27,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - didUpdateText Delegate
+
+-(void)didUpdateText:(NSString *)text
+{
+    
+    self.textField.text = text;
+}
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([sender isKindOfClass:[UIBarButtonItem class]])
@@ -36,6 +44,7 @@
             NSString *textToAdd = self.textField.text;
             DetailViewController *nextViewController = segue.destinationViewController;
             nextViewController.textFromTextBox = textToAdd;
+            nextViewController.delegate = self;
         }
     }
 }
