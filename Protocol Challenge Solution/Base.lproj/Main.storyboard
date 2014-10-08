@@ -70,24 +70,49 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="16" y="274" width="368" height="51"/>
+                                    <rect key="frame" x="16" y="72" width="368" height="51"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5K-n5-v4V">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Update">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="152" y="230" width="88" height="44"/>
+                                </variation>
+                                <connections>
+                                    <action selector="detailUpdateButton:" destination="afq-QI-lov" eventType="touchUpInside" id="lAk-vV-BF7"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ec9-p0-Mh7">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="110" y="192" width="181" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="cG6-ew-fUx"/>
+                                <exclude reference="R5K-n5-v4V"/>
+                                <exclude reference="ec9-p0-Mh7"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="cG6-ew-fUx"/>
+                                <include reference="R5K-n5-v4V"/>
+                                <include reference="ec9-p0-Mh7"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="detailTextLabel" destination="cG6-ew-fUx" id="fjJ-p9-cTR"/>
+                        <outlet property="detailViewTextField" destination="ec9-p0-Mh7" id="3fS-bA-51P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xFH-Z4-0OG" userLabel="First Responder" sceneMemberID="firstResponder"/>

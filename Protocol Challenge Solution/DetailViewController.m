@@ -37,4 +37,8 @@
 }
 */
 
+- (IBAction)detailUpdateButton:(id)sender {
+}
+- (IBAction)detailUpdate:(id)sender {
+}
 @end
