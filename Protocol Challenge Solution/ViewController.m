@@ -18,8 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    
+    self.textField.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,6 +32,14 @@
 {
     
     self.textField.text = text;
+}
+
+#pragma mark - UITextField delegate
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [self.textField resignFirstResponder];
+    return YES;
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

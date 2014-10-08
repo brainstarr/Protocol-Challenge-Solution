@@ -37,6 +37,8 @@
 }
 */
 
+#pragma mark - detail VC delegate
+
 - (IBAction)detailUpdateButton:(id)sender
 {
     self.detailTextLabel.text = self.detailViewTextField.text;

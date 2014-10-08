@@ -18,7 +18,7 @@
 
 @interface DetailViewController : UIViewController
 
-@property (weak, nonatomic) id <DetailViewControllerDelegate> delegate;
+@property (weak, nonatomic) id <DetailViewControllerDelegate, UITextFieldDelegate> delegate;
 
 @property (strong, nonatomic) IBOutlet UILabel *detailTextLabel;
 @property (strong, nonatomic) NSString *textFromTextBox;
